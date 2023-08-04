@@ -1,0 +1,130 @@
+html {
+    font-family: 'Quicksand', sans-serif;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+    background-color: #F1F0EA;
+    height: 100%;
+    margin: 0;
+    height: 100%;
+    background-image: linear-gradient(
+        rgba(0, 0, 0, 0.2),
+        rgba(0, 0, 0, 0.2)
+    )
+    ,url('../img/roman-serdyuk-DL9Wz4YDa2s-unsplash.jpg');
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+}
+
+
+body {
+    height: 88%;
+}
+
+.divBoton{
+    text-align: right;
+}
+
+#botonEnviar {
+    font-size: 1.3rem;
+    font-weight: bold;
+    padding: 10px 20px;
+    border-radius: 8px;
+    border: 0px;
+    box-shadow: 1px 1px 4px rgba(0, 0, 0.5);
+    color: #F1F0EA;
+    background-color: darkgoldenrod;    
+    margin-top: 30px;
+    margin-right: 42px;
+    justify-content: right;
+}
+
+#botonEnviar:hover {
+    background-color: #544411;
+    color: #F1F0EA;
+    transition:  0.3s ease;
+    cursor: pointer;
+}
+
+#botonVolver {
+    font-size: 1.3rem;
+    font-weight: bold;
+    padding: 10px 20px;
+    border-radius: 8px;
+    border: 0px;
+    box-shadow: 1px 1px 4px rgba(0, 0, 0.5);
+    color: #F1F0EA;
+    background-color: darkgoldenrod;   
+    margin-top: 10px; 
+    margin-left: 42px;
+    justify-content: right;
+}
+
+#botonVolver:hover {
+    background-color: #544411;
+    color: #F1F0EA;
+    transition:  0.3s ease;
+    cursor: pointer;
+}
+
+
+
+#titulo {
+    font-size: 2.7rem; 
+    text-decoration: underline;
+    padding-top: 30px;
+    margin-bottom: 0px;
+}
+
+#formularioEmail{
+    margin-top: 70px;
+    height: 85%;
+    width: 50%;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    margin-left: 486px;
+    background-color: #F1F0EA;
+    border-radius: 5px ;
+}
+
+
+.mb-3{
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    font-size: 1.3rem;
+    display: flex;
+    padding-top: 40px;
+    padding-top: 50px;
+}
+
+.form-control{
+    padding: 7px;
+    font-size: 1rem;
+    border-radius: 5px;
+    border: solid #544411 1px;
+    justify-content: right;
+    display: flex;
+    margin-top: 10px;
+}
+
+#exampleFormControlInput1 {
+    margin-left: 100px;
+    margin-right: 100px;
+}
+
+#exampleFormControlinput2{
+    width: 90%;
+    padding-bottom: 300px;
+    border-radius: 5px;
+    border: solid #544411 1px;
+    justify-content: right;
+    display: flex;
+    margin-top: 20px;
+
+}
+
+input:required{
+    color: #544411;
+}

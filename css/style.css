@@ -1,0 +1,771 @@
+html {
+    font-family: 'Quicksand', sans-serif;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+    background-color: #F1F0EA;
+}
+
+
+body {
+    margin: 0;
+}
+
+
+
+/*TITULOS*/
+
+
+
+h1 {font-size: 3.5rem;}
+
+h2 {font-size: 2.7rem;}
+
+h3{font-size: 1.8rem;}
+
+p{font-size: 1.25rem;}
+
+ul {list-style: none;}
+
+li {font-size: 1.25rem;}
+
+
+
+/*BOTONES*/
+
+
+
+button {
+    font-size: 1.5rem;
+    font-weight: bold;
+    padding: 10px 20px;
+    border-radius: 8px;
+    border: 0px;
+    box-shadow: 1px 1px 4px rgba(0, 0, 0.5);
+    color: #F1F0EA;
+    background-color: darkgoldenrod;
+}
+
+button:hover {
+    background-color: #544411;
+    color: #F1F0EA;
+    transition:  0.3s ease;
+    cursor: pointer;
+}
+
+
+
+
+/*HEADER*/
+
+
+
+
+
+.container {
+    max-width: 1400px;
+    margin: auto;
+}
+
+header {
+    background-color: #F1F0EA;
+}
+
+header .logo {
+    margin: 0;
+    padding-top: 40px;
+    padding-bottom: 40px;
+    font-weight: bold;
+    color: darkgoldenrod;
+    font-size: 2.7rem;
+    font-family: 'Great Vibes', cursive;
+}
+
+header .container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+header nav {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    padding: 0px 0px 20px;
+}
+
+
+header a {
+    text-decoration: none;
+    padding: 0px 12px 6px;
+    color: black;
+}
+
+header a:hover {
+    color: #907520 ;
+    transition: 0.3s ease;
+}
+
+
+#formularioHeader{
+    margin: 0;
+}
+
+
+
+
+/*MENU PRINCIPAL*/
+
+
+
+
+
+
+
+#hero {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    height: 90vh;
+    color: #F1F0EA;
+    background-image: linear-gradient(
+        rgba(0, 0, 0, 0.6),
+        rgba(0, 0, 0, 0.6)
+    )
+    ,url('../img/uniboa-WPPT8uFH-cY-unsplash.jpg');
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+}
+
+
+
+
+
+/*PRODUCTOS +INFO*/
+
+
+
+
+
+.modal-container {
+    display: flex;
+    background-color: rgba(0, 0, 0, 0.2);
+    align-items: center;
+    justify-content: center;
+    position: fixed;
+    pointer-events: none;
+    opacity: 0;  
+    top: 0;
+    left: 0;
+    height: 100vh;
+    width: 100vw;
+    transition: opacity 0.3s ease;
+    
+  }
+  
+.show {
+    pointer-events: auto;
+    opacity: 1;
+  }
+  
+.modal {
+    background-color: #F1F0EA;
+    width: 1000px;
+    height: 700px;
+    max-width: 100%;
+    padding: 30px 50px;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    border: #544411 5px double;
+  }
+  
+.modal h1 {
+    margin: 0;
+  }
+  
+.modal p {
+    opacity: 1;
+    font-size: 19px;
+  }
+
+.modal img{
+    margin-top: 15px;
+    margin-bottom: 10px;
+    height: 400px;
+    width: 500px;
+}
+
+/*CARRITO*/
+
+
+#carrito_navbar{
+    cursor: pointer;
+}
+
+
+#modal_container_carrito p{
+    margin: 0px 0px 10px 0px;
+}
+
+.tituloCarritoInnerHtml{
+    margin-top: 50px;
+    margin-bottom: 10px;
+}
+
+.modalCarrito {
+    background-color: #F1F0EA;
+    width: 800px;
+    height: 100%;
+    max-width: 100%;
+    padding: 30px 60px;
+    margin-left: 60%;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    border: #544411 5px double;
+}
+
+#tituloCarrito{
+    margin: 0;
+}
+
+#tituloCarrito h1{
+    margin-bottom: 30px;
+}
+
+#tituloCarrito p {
+    margin-bottom: 20px;
+}
+
+#botonQuitar {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    margin-left: 15px; 
+    margin-right: 15px; 
+}
+
+
+#closeCarrito{
+    font-size: 1.6rem;
+    font-weight: bold;
+    padding: 7px 10px;
+    border-radius: 8px;
+    border: 0px;
+    box-shadow: 1px 1px 4px rgba(0, 0, 0.5);
+    color: #F1F0EA;
+    background-color: darkgoldenrod;
+    margin-top: 10px;
+    margin-bottom: 20px;
+    margin-right: 281px;
+    position: relative;
+}
+#closeCarrito:hover {
+    background-color: #544411;
+    color: #F1F0EA;
+    transition:  0.3s ease;
+    cursor: pointer;
+}
+
+#productoAgregadoAlCarrito{
+    display: flex;
+    align-items: center;
+    text-align: center;
+}
+
+
+#productoAgregadoAlCarrito img{
+    height: 85px;
+    width: 85px;
+    margin-right: 25px;
+    border-radius: 10px;
+}
+
+
+
+
+#botonAgregar{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 15px;
+    font-size: 1.2rem;
+    font-weight: bold;
+    padding: 7px 12px;
+    border-radius: 8px;
+    border: 0px;
+    box-shadow: 1px 1px 4px rgba(0, 0, 0.5);
+    color: #F1F0EA;
+    background-color: darkgoldenrod;
+}
+
+#botones{
+    border-top:#544411 solid 2px;
+    margin-bottom: 0;
+}
+
+#limpiarCarrito{
+    font-size: 1.2rem;
+    font-weight: bold;
+    padding: 8px 18px;
+    border-radius: 8px;
+    border: 0px;
+    box-shadow: 1px 1px 4px rgba(0, 0, 0.5);
+    color: #F1F0EA;
+    background-color: darkgoldenrod;
+    margin-top: 10px;
+    margin-bottom: 20px;
+}
+#limpiarCarrito:hover {
+    background-color: #544411;
+    color: #F1F0EA;
+    transition:  0.3s ease;
+    cursor: pointer;
+}
+
+
+#botonComprar{
+    font-size: 1.2rem;
+    font-weight: bold;
+    padding: 8px 18px;
+    border-radius: 8px;
+    border: 0px;
+    box-shadow: 1px 1px 4px rgba(0, 0, 0.5);
+    color: #F1F0EA;
+    background-color: darkgoldenrod;
+    margin-top: 10px;
+    margin-bottom: 20px;
+}
+#botonComprar:hover {
+    background-color: #544411;
+    color: #F1F0EA;
+    transition:  0.3s ease;
+    cursor: pointer;
+}
+
+#precioTotal {
+    text-align: right;
+    margin-top: 20px;
+}
+
+
+/*BUSCADOR*/
+
+
+.input-group{
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    margin-top: 0px;
+    margin-bottom: 60px;
+    display: flex;
+    margin-left: 50px ;
+}
+
+
+#inputGroupSelect04 {
+    font-size: 1.2rem;
+    background-color: #F1F0EA;
+    font-family: 'Quicksand', sans-serif;
+    border: #544411 solid 1.9px;
+    border-radius: 5px;
+    padding-right: 15rem;
+    padding-top: 5px;
+    padding-bottom: 7px;
+    margin-right: 5px;
+}
+
+
+.input-group button{
+    font-size: 1.2rem;
+    font-weight: bold;
+    padding: 10px 20px;
+    border-radius: 8px;
+    border: 0px;
+    box-shadow: 1px 1px 4px rgba(0, 0, 0.5);
+    color: #F1F0EA;
+    background-color: darkgoldenrod;
+}
+
+button:hover {
+    background-color: #544411;
+    color: #F1F0EA;
+    transition:  0.3s ease;
+    cursor: pointer;
+}
+
+
+
+/*tipos de productos*/
+
+
+#tusProductos-hero{
+    background-image: linear-gradient(
+        rgba(0, 0, 0, 0.5),
+        rgba(0, 0, 0, 0.5)
+    )
+    ,url('../img/fondo.avif');
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    color: #F1F0EA;
+    padding: 50px;
+    padding-bottom: 160px;
+}
+
+
+
+
+/* PRECIO MAX Y MIN */
+
+
+
+#inputMaxMin{
+    display: flex;
+    margin-left: 40px;
+}
+
+#precioMaximo{
+    padding: 10px;
+    border-radius: 5px;
+    border: none;
+    margin: 8px;
+    background-color: #F1F0EA;
+}
+
+#precioMaximo::placeholder{
+    font-family: 'Quicksand', sans-serif;
+}
+
+#precioMinimo{
+    padding: 10px;
+    border-radius: 5px;
+    border: none;
+    margin: 8px;
+    background-color: #F1F0EA;
+}
+
+#precioMinimo::placeholder{
+    font-family: 'Quicksand', sans-serif;
+}
+
+
+
+/*CARTA DE PRODUCTO*/
+
+
+
+
+.card-img-top{
+    height: 230px;
+    width: 230px;
+}
+
+
+
+#subtitulo{
+    font-size: 32px;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+}
+
+
+#contenedor{
+    display: flex;
+}
+
+
+.card{
+    padding-left: 150px;
+    padding-right: 150px;
+    box-shadow: 1px 1px 4px rgba(0, 0, 0.5);
+    padding: 15px 30px 30px;
+    margin-left: 120px;
+    margin-right: 0;
+    margin-top: 20px;
+    margin-bottom: 60px;
+    width: 240px;
+    border-radius: 10px;
+    background-color: #F1F0EA;
+    color: black;
+}
+
+
+.card img{
+    border-radius: 10px;
+}
+
+.card h5{
+    font-size: 30px;
+    margin-bottom: 0;
+    margin-top: 15px;
+}
+
+.card p{
+    font-size: 20px;
+}
+
+.btn-btn-primary{
+    font-size: 1.3rem;
+    font-weight: bold;
+    padding: 10px 20px;
+    border-radius: 8px;
+    border: 0px;
+    box-shadow: 1px 1px 4px rgba(0, 0, 0.5);
+    color: #F1F0EA;
+    background-color: #a29127;
+}
+
+
+
+.btn-btn-secondary{
+    font-size: 1.2rem;
+    padding: 7px 14px;
+    margin-left: 10px;
+    border-radius: 8px;
+    border: 0px;
+    box-shadow: 1px 1px 4px rgba(0, 0, 0.5);
+    color:  #F1F0EA;
+    background-color: #77512a;
+}
+
+#tusProductos{
+    flex-direction: column;
+    height: 18vh;
+}
+
+#tusProductos h1{
+    margin-top: 4.8rem;
+    margin-bottom: 3rem;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+}
+
+
+#cajaProductos{
+    padding: 0;
+    margin-top: 0;
+    align-items: center;
+    text-align: center;
+    margin-left: 0;
+}
+
+
+hr {
+    border: solid 4px #907520;
+}
+
+
+
+/*SOBRE NOSOTROS*/
+
+
+
+
+
+.color-acento {
+    color: darkgoldenrod;
+}
+
+
+#sobre-nosotros .container{
+    display: flex;
+    text-align: center;
+    padding: 200px 12px;
+    background-color: #F1F0EA;
+    justify-content: center;
+    margin-top: 40px;
+    margin-bottom: 70px;
+}
+
+
+#sobre-nosotros .img-container{
+    background-image: linear-gradient(
+        0deg,
+        rgba(0, 0, 0, 0.2),
+        rgba(0, 0, 0, 0.2)
+    )
+    ,url('../img/clem-onojeghuo-hdW4rZPHe2g-unsplash.jpg');
+    background-size: cover;
+    background-position: center center;
+    height: 500px;
+    width: 650px;
+    border: black 0px solid;
+    box-shadow: 1px 1px 4px rgba(0, 0, 0.5);
+}
+
+
+#sobre-nosotros .texto {
+    text-align: initial;
+    padding: 0px 70px;
+    max-width: 600px;
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+#sobre-nosotros h2{
+    margin: 0px;
+}
+
+#productos {
+    background-color: #F1F0EA ;
+    color: black;
+    text-align: center;
+}
+
+
+#productos .container{
+    padding: 140px 0px;
+}
+
+
+#productos h2{
+    margin-top: 0px;
+    margin-bottom: 125px;
+    margin-left: 0px;
+    margin-right: 0px;
+    text-decoration: underline;
+}
+
+
+#productos h3{
+    padding-top: 0px;
+    padding-bottom: 300px;
+}
+
+
+#productos .carta{
+    padding-top: 10px;
+    padding-bottom: 25px;
+    margin: 33px;
+    border-radius: 16px;
+    color: #F1F0EA;
+}
+
+
+.carta:first-child{
+    background-image: linear-gradient(
+        rgba(0, 0, 0, 0.3),
+        rgba(0, 0, 0, 0.3)
+    )
+    ,url('../img/placard.jpeg');
+    background-size: cover;
+    padding-left: 150px;
+    padding-right: 150px;
+}
+
+
+.carta:nth-child(2){
+    background-image: linear-gradient(
+        rgba(0, 0, 0, 0.3),
+        rgba(0, 0, 0, 0.3)
+    )
+    ,url('../img/cocina.jpeg');
+    background-size: cover;
+    padding-left: 156px;
+    padding-right: 156px;
+}
+
+
+.carta:nth-child(3){
+    background-image: linear-gradient(
+        rgba(0, 0, 0, 0.3),
+        rgba(0, 0, 0, 0.3)
+    )
+    ,url('../img/decoraciones.jpeg');
+    background-size: cover;
+    padding-left: 115.77px;
+    padding-right: 115.77px;
+}
+
+
+
+#contacto-hero{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    height: 90vh;
+    color: #F1F0EA;
+    background-image: linear-gradient(
+        rgba(0, 0, 0, 0.6),
+        rgba(0, 0, 0, 0.6)
+    )
+    ,url('../img/paul-trienekens-mLO6ILUbADA-unsplash.jpg');
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+}
+
+
+footer .container{
+    background-color: #F1F0EA;
+}
+
+footer .container p{
+    padding: 35px 15px;
+    padding-left: 40px;
+    margin: 0px;
+    text-align: right;
+    color: rgba(0, 0, 0, 0.6);
+}
+
+
+@media (min-width: 720px) {
+
+    header {
+        position: fixed;
+        width: 100%;
+    }
+
+
+    header .container{
+        flex-direction: row;
+        justify-content: space-between;
+        padding-left: 15px;
+        height: 95px;
+    }
+
+    header nav {
+        flex-direction: row;
+        padding-bottom: 0px;
+        padding-top: 6px;
+        
+    }
+
+
+    #productos .muebles{
+        display: flex;
+        justify-content: center;
+    }
+
+    #productos p {
+        display: block;
+    }
+
+    #productoscontacto-hero.carta{
+        padding: 30px 15px;
+    }
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+  <link rel="stylesheet" href="../css/styleEmail.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@600&display=swap" rel="stylesheet">
+<html lang="en">
+<head>
+    <title>CarpinteriaRuben, Envianos un mail</title>
+</head>
+<body>
+
+
+  <!-- BOTON -->
+
+
+  <button id="botonVolver">🡐</button>
+  <script>
+    const botonVolver = document.querySelector("#botonVolver")
+    botonVolver.addEventListener(("click"), () => {
+      window.location.href = "http://192.168.0.17:8080"
+    })
+  </script>
+
+
+
+  <!-- FORMULARIO DEL MAIL -->
+
+
+
+
+  <form id="formularioEmail">
+    <h2 id="titulo">Envianos un Mensaje</h2>
+    <div class="mb-3">
+      <input type="text" class="form-control" id="exampleFormControlInput1" placeholder="Nombre"  name="name" required>
+      <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="Nombre@ejemplo.com" name="email" required>
+    </div>
+    <div class="mb-3">
+      <input class="form-control" id="exampleFormControlinput2" rows="3" placeholder="Mensaje..." name="message" required></input>
+    </div>
+    <div class="divBoton">
+      <input type="submit" id="botonEnviar" value="Enviar">
+    </div>
+  </form>
+
+
+
+
+  <!-- LIBRERIA EMAIL JS -->
+
+
+
+
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+
+  <script type="text/javascript">
+    emailjs.init('eWnFtlPeSWJm9dVUX')
+  </script>
+
+  <script>
+  const btn = document.getElementById('botonEnviar');
+
+document.getElementById('formularioEmail')
+ .addEventListener('submit', function(event) {
+   event.preventDefault();
+
+   btn.value = 'Enviando...';
+
+   const serviceID = 'default_service';
+   const templateID = 'template_aiydkm4';
+
+   emailjs.sendForm(serviceID, templateID, this)
+    .then(() => {
+      btn.value = 'Enviar';
+      alert('¡Enviado!');
+    }, (err) => {
+      btn.value = 'Enviar de nuevo';
+      alert(JSON.stringify(err));
+    });
+});
+  </script>
+  
+</body>
+
+</html>

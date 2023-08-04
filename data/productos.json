@@ -1,0 +1,87 @@
+[
+   
+    {
+       "id":1,
+       "img":"./img/placard ropero.jpg",
+       "tipo":"Placard",
+       "nombre":"Placard tipo ropero",
+       "precio":2000
+    },
+    {
+       "id":2,
+       "img":"./img/ropero melamina.jpg",
+       "tipo":"Placard",
+       "nombre":"Placard de melamina",
+       "precio":5000
+    },
+    {
+       "id":3,
+       "img":"./img/ropero tipo vestidor.jpg",
+       "tipo":"Placard",
+       "nombre":"Placard tipo vestidor",
+       "precio":8000
+    },
+    {
+       "id":4,
+       "img":"./img/ropero facil.jpg",
+       "tipo":"Placard",
+       "nombre":"Placard de armado facil",
+       "precio":1500
+    },
+    {
+       "id":5,
+       "img":"./img/cocina de departamento.jpg",
+       "tipo":"Cocina",
+       "nombre":"Cocina de Departamento",
+       "precio":1300
+    },
+    {
+       "id":6,
+       "img":"./img/cocina pequeña.jpg",
+       "tipo":"Cocina",
+       "nombre":"Cocina pequeña",
+       "precio":4000
+    },
+    {
+       "id":7,
+       "img":"./img/cocina intermedia.jpg",
+       "tipo":"Cocina",
+       "nombre":"Cocina intermedia",
+       "precio":5500
+    },
+    {
+       "id":8,
+       "img":"./img/cocina completa.jpg",
+       "tipo":"Cocina",
+       "nombre":"Cocina completa",
+       "precio":11500
+    },
+    {
+       "id":9,
+       "img":"./img/decoracion por unidad.jpg",
+       "tipo":"Decoracion",
+       "nombre":"Decoracion por unidad",
+       "precio":1500
+    },
+    {
+       "id":10,
+       "img":"./img/pack de decoraciones.jpg",
+       "tipo":"Decoracion",
+       "nombre":"Pack de decoraciones",
+       "precio":2000
+    },
+    {
+       "id":11,
+       "img":"./img/decoracion de ambiente.jpg",
+       "tipo":"Decoracion",
+       "nombre":"Decoracion de ambiente",
+       "precio":9600
+    },
+    {
+       "id":12,
+       "img":"./img/decoracion del hogar.jpg",
+       "tipo":"Decoracion",
+       "nombre":"Decoracion del hogar",
+       "precio":13300
+    }
+ ]

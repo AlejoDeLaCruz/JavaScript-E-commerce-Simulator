@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/toastify-js/src/toastify.min.css">
+    <link rel="stylesheet" href="./css/style.css">
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap" rel="stylesheet">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@600&display=swap" rel="stylesheet">
+
+
+<html lang="en">
+<head>
+    <title>E-COMMERCE SIMULATOR</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+</head>
+<body>
+
+
+
+    <!-- HEADER -->
+
+
+
+    <header class="header">
+        <div class="container">
+            <a href="http://192.168.0.17:8080/index.html" class="logo">WoodStock</a>
+            <nav>
+                <a href="#productos">Productos</a>
+                <a href="#tusProductos-hero">Buscar</a>
+                <a href="#sobre-nosotros">Sobre nosotros</a>
+                <a href="#contacto-hero">Contactanos</a>
+                <a id="carrito_navbar">🛒</a>
+                <div id="modal_container_carrito" class="modal-container">
+                    <div class="modalCarrito">
+                      
+                      <h1 id="tituloCarrito"></h1> 
+                      <p id="textoCarrito"></p>
+                      <div id="botones">
+                      <button id="closeCarrito">🡐</button>
+                      <button id="botonComprar" >Comprar</button>
+                      <button id="limpiarCarrito">Limpiar Carrito</button>
+                      <p id="precioTotal">Precio total: $</p>
+                      </div>                      
+                    </div>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+
+
+
+    <!-- RUBENMUEBLES -->
+
+
+
+
+    <section id="hero">
+        <h1>Carpintería y diseño de muebles</h1>
+        <form action="#productos" id="formularioHeader">
+            <button>Nuestros productos</button>
+        </form>
+    </section>
+
+
+
+
+
+    <!-- PRODUCTOS -->
+
+
+
+
+
+    <section id="productos">
+        <div class="container">
+            <h2>Nuestros productos</h2>
+            <div class="muebles">
+                <div class="carta">
+                    <h3>Placares</h3>
+                    <form>
+                        <button id="boton1">+Info</button>
+                    </form>
+                </div>
+                    <div class="carta">
+                    <h3>Cocinas</h3>
+                    <form>
+                        <button id="boton2">+Info</button>
+                    </form>
+                </div>
+                <div class="carta">
+                    <h3>Decoraciones</h3>
+                    <form>
+                        <button id="boton3">+Info</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+        <div id="modal_container" class="modal-container">
+            <div class="modal">
+              <h1 id="tituloVentana"></h1>
+              <p id="textoVentana">
+                
+              </p>
+              <button id="closeVentana">Cerrar</button>
+            </div>
+        </div>
+    </section>
+
+
+
+
+    <!--TUS PRODUCTOS-->
+
+
+    
+
+    <section id="tusProductos-hero">
+        <section id="tusProductos">
+            <h1> <span class="color-acento">Tus</span> productos</h1>
+        </section>
+
+    
+
+    <div class="input-group">
+
+        <!--BUSCADOR-->
+
+        <select class="form-select" id="inputGroupSelect04" aria-label="Example select with button addon">
+          <option hidden selected>Buscar</option>
+          <option id="placards" value="Placares">Placares</option>
+          <option id="cocinas" value="Cocinas">Cocinas</option>
+          <option id="decoraciones" value="Decoraciones">Decoraciones</option>
+        </select>
+        <button id="botonBuscar" class="btn btn-outline-secondary" type="button">Buscar</button>
+
+         <!--PRECIO MAX Y MIN-->
+
+            <div id="inputMaxMin">
+                <div class="mb-3">
+                    <input type="number" value="" id="precioMinimo" placeholder="Precio MIN $1500-">
+                    <input type="number" value="" id="precioMaximo" placeholder="Precio MÁX -$13300">
+                
+                </div>
+            </div>
+        </div>
+
+
+        <h4 id="subtitulo"></h4>
+
+        <div id="contenedor">
+        
+        </div>
+    
+        <ul id="cajaProductos"></ul> 
+    </section>
+
+
+
+
+
+    <!-- SOBRE NOSOTROS -->
+
+
+
+
+
+
+    <section id="sobre-nosotros">
+        <div class="container">
+            <div class="img-container"></div>
+            <div class="texto">
+                <h2>Sobre <span class="color-acento">nosotros</span></h2>
+            <p>Somos una empresa de carpintería apasionados por el oficio y contando con mas de 40 años de trayectoria. Buscamos en cada trabajo dejar un sabor diferente basandonos en diseños destacables por su creatividad y su originalidad.</p>
+            </div>    
+        </div>
+    </section>
+
+
+
+
+    <!-- CONTACTANOS -->
+
+
+
+
+
+    <section id="contacto-hero">
+        <div class="container">
+            <h2>Contactanos</h2>
+            <p>rubendelacrux@gmail.com</p>
+            <div>
+                <button id="botonMensajes">Mensajes</button>
+            </div>
+        </div>
+    </section>
+
+
+
+
+    <!-- FOOTER -->
+
+
+
+
+    <footer>
+        <div class="container">
+            <p id="copyright"></p>
+        </div>
+    </footer>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/toastify-js"></script>
+    <script src="./js/main.js"></script>
+</body>
+</html>

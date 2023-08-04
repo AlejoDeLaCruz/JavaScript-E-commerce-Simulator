@@ -1,0 +1,241 @@
+html {
+    font-family: 'Quicksand', sans-serif;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+    background-color: #F1F0EA;
+    height: 100%;
+}
+
+
+body {
+    margin: 0;
+    height: 120%;
+    background-image: linear-gradient(
+        rgba(0, 0, 0, 0.6),
+        rgba(0, 0, 0, 0.6)
+    )
+    ,url('../img/nick-hillier-aQcE3gDSSTY-unsplash.jpg');
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+}
+
+
+
+
+
+/*TITULOS */
+
+
+
+
+
+
+
+
+h1 {font-size: 3.5rem;}
+
+h2 {font-size: 2.7rem; text-decoration: underline;}
+
+h3{font-size: 1.8rem;}
+
+p{font-size: 1.25rem;}
+
+ul {list-style: none;}
+
+li {font-size: 1.25rem;}
+
+
+
+
+/*BOTONES*/
+
+
+
+
+
+
+button {
+    font-size: 1.5rem;
+    font-weight: bold;
+    padding: 10px 20px;
+    border-radius: 8px;
+    border: 0px;
+    box-shadow: 1px 1px 4px rgba(0, 0, 0.5);
+    color: #F1F0EA;
+    background-color: darkgoldenrod;
+    
+}
+
+button:hover {
+    background-color: #544411;
+    color: #F1F0EA;
+    transition:  0.3s ease;
+    cursor: pointer;
+}
+
+#botonParaFinalizarCompra{
+    font-size: 1.5rem;
+    font-weight: bold;
+    padding: 10px 20px;
+    border-radius: 8px;
+    border: 0px;
+    box-shadow: 1px 1px 4px rgba(0, 0, 0.5);
+    color: #F1F0EA;
+    background-color: darkgoldenrod;
+}
+
+#botonParaFinalizarCompra:hover {
+    background-color: #544411;
+    color: #F1F0EA;
+    transition:  0.3s ease;
+    cursor: pointer;
+}
+
+/*HEADER*/
+
+
+
+
+
+.container {
+    max-width: 1400px;
+    margin: auto;
+    height: 95px;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+header {
+    background-color: #F1F0EA;
+    display: flex;
+}
+
+header .logo {
+    margin: 0;
+    padding-top: 40px;
+    padding-bottom: 40px;
+    font-weight: bold;
+    color: darkgoldenrod;
+    font-size: 2.7rem;
+    font-family: 'Great Vibes', cursive;
+    margin-right: 680px;
+    
+}
+
+header .container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+   
+}
+
+header nav {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    padding: 0px 0px 20px;
+}
+
+
+header a {
+    text-decoration: none;
+    padding: 0px 12px 6px;
+    color: black;
+}
+
+header a:hover {
+    color: #907520 ;
+    transition: 0.3s ease;
+}
+
+#botonVolver{
+    margin-right: 350px;
+    margin-top: 25px;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+#boton{
+    font-size: 1.3rem;
+    padding: 10px;
+}
+
+
+
+
+
+/*FORMULARIO*/
+
+
+
+#titulo {
+    padding-top: 5px;
+}
+
+
+#formularioParaFinalizarCompra{
+    
+    height: 88%;
+    width: 50%;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    margin-left: 486px;
+    background-color: #F1F0EA;
+    border-radius: 5px ;
+}
+
+form{
+    margin-top: 0px;
+    width: 800px;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    margin-left: 200px;
+    padding-top: 20px;
+}
+
+
+.formulario{
+    justify-content: left;
+    text-align: center;
+    align-items: center;
+    font-size: 1.3rem;
+    display: flex;
+    padding-top: 40px;
+    padding-top: 50px;
+}
+
+.form-label{
+    margin-right: 15px;
+}
+
+.form-control{
+    padding: 7px;
+    border-radius: 5px;
+    border: solid #544411 1px;
+    justify-content: right;
+    display: flex;
+    margin-left: 15px;
+    font-size: 1rem;
+}
+
+#botonParaFinalizarCompra{
+    margin-top: 80px;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    margin-left: 350px;
+}
+
+
+/*ESTO ES PARA EMPROLIJAR EL HTML QUE TE MUESTRA LOS PRODUCTOS QUE VAS A COMPRAR*/
+
+ul{
+    padding: 0;
+}
+
+
